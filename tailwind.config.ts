@@ -1,29 +1,33 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
+  prefix: "",
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
       },
-      colors: {
-        'primary' : '#3BACF9',
-        'black' : '#0A1F44',
-        'gray-bold' : '#758196',
-        'white' : 'FFFFFF',
-        // 'primary-gradient' : 'linear-gradient(108deg, #bfe5ff -102.41%, #3bacf9 32.94%)'
-        'light-strok' : '#A6AEBC',
-        'gray-light' : '#F8F8F8'
-      }
+    },
+    extend: {
+      // 'primary' : '#3BACF9',
+      // 'black' : '#0A1F44',
+      // 'gray-bold' : '#758196',
+      // 'white' : 'FFFFFF',
+      // // 'primary-gradient' : 'linear-gradient(108deg, #bfe5ff -102.41%, #3bacf9 32.94%)'
+      // 'light-strok' : '#A6AEBC',
+      // 'gray-light' : '#F8F8F8'
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
