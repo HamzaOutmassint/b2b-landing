@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navabar from "@/components/navabar";
-
-const montserrat = Montserrat({ 
-  subsets: ["latin"] ,
-  weight: ['400','500','600','700']
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <Navabar />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

@@ -1,7 +1,8 @@
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main>
+      <h1>hello world</h1>
     </main>
   );
 }
