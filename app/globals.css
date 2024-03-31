@@ -13,7 +13,8 @@
   --gray-bold : #758196;
   --white : #FFFFFF;
   --light-strok : #A6AEBC;
-  --gray-light : #F8F8F8;
+  --gray-light : #e8e8e8;
+  /* --gray-light : #F1F2F4; */
 }
 
 *{
@@ -25,7 +26,7 @@
 #login::before, #sign-up::before, #explore::before {
   content: '';
   position: absolute;
-  bottom: -1.4rem;
+  bottom: -1.6rem;
   left: 1px;
   height: 4px;
   width: 100%;
