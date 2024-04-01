@@ -59,3 +59,7 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+
+#SheetDescriptio{
+  margin-top: 1.6rem !important;
+}
