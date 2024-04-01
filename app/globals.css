@@ -23,6 +23,24 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* 
+  ### style for navigation bar ###
+*/
+
 #login::before, #sign-up::before, #explore::before {
   content: '';
   position: absolute;

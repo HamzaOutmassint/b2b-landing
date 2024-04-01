@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { BarChart, Search } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="bg-black h-screen">
+    <main className="bg-black h-screen text-white w-full">
       <h1>hello world</h1>
-      
-      <Button className="bg-primary text-white hover:bg-white hover:text-primary">companies</Button>
     </main>
   );
 }
