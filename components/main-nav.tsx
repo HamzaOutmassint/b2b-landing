@@ -1,21 +1,23 @@
-'use client';
-import Image from "next/image"
-import commonShareLogo from '../public/assest/commonShare-logo.svg'
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { Input } from "./ui/input"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import {Search } from "lucide-react";
 
-const MainNav = () => {
+type ImageProp = string | StaticImageData;
+interface MainNavProps {
+  commonShareLogo : ImageProp
+}
+const MainNav : React.FC<MainNavProps> = ({commonShareLogo}) => {
   return (
-    <nav className='flex justify-between items-center py-4 pl-4 pr-2 mr-[15px] border-b border-gray-light sticky top-0 z-50 bg-white w-full' id="navigation-bar">
+    <nav className='hidden lg:flex justify-between items-center w-full pr-2'>
       <div className='flex'>
         <Link href='/' className="self-center mr-8">
           <Image src={commonShareLogo} alt="common share logo" height={30} />
         </Link>
-        <form className="text-sm hidden lg:flex col-span-3 self-start justify-center items-center border border-gray-light rounded-2xl">
+        <form className="text-sm col-span-3 flex self-start justify-center items-center border border-gray-light rounded-2xl">
           <Select>
-            <SelectTrigger className="w-[120px]">
+            <SelectTrigger>
               <SelectValue placeholder="Companies" />
             </SelectTrigger>
             <SelectContent>
