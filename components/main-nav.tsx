@@ -15,12 +15,12 @@ const MainNav : React.FC<MainNavProps> = ({commonShareLogo}) => {
     <nav className='hidden md:flex justify-between items-center w-full pr-2'>
       <div className='flex'>
         <Link href='/' className="self-center mr-8">
-          <Image src={commonShareLogo} priority={true} alt="common share logo" height={20} />
+          <Image src={commonShareLogo} priority={true} alt="common share logo" className="lg:h-[30px] md:h-5 w-fit" />
         </Link>
-        <form className="text-sm col-span-3 flex self-start justify-center items-center border border-gray-light rounded-2xl">
+        <form className="lg:text-sm md:text-xs col-span-3 flex self-start justify-center items-center border border-gray-light rounded-2xl">
           <Select>
             <SelectTrigger>
-              <SelectValue placeholder="Companies" />
+              <SelectValue placeholder="Companies"/>
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -30,13 +30,13 @@ const MainNav : React.FC<MainNavProps> = ({commonShareLogo}) => {
             </SelectContent>
           </Select>
           <div className="relative items-center ml-[2px]">
-            <Input type="text" placeholder="Search Sustainable Companies" className="lg:w-[28rem] border-y border-r border-l-none border-gray-light px-4 py-2 focus-visible:ring-offset-0 rounded-l-none rounded-r-2xl" />
-            <Search className="absolute right-4 top-2.5 w-[17px] h-[17px]"/>
+            <Input type="text" placeholder="Search Sustainable Companies" className="lg:w-[28rem] md:w-64 exactly-1024:w-80 lg:text-sm md:text-xs border-y border-r border-l-none border-gray-light lg:px-4 lg:py-2  focus-visible:ring-offset-0 rounded-l-none rounded-r-2xl" id="search-input-lg"/>
+            <Search className="absolute right-4 lg:top-2.5 md:top-2 w-[17px] h-[17px]"/>
           </div>
         </form>
       </div>
-      <ul className="flex justify-between text-base font-bold cursor-pointer col-span-2 self-center">
-        <li className="relative hover:text-primary transition ease-linear duration-150 px-3" id="login">
+      <ul className="flex justify-between lg:text-base md:text-xs font-bold cursor-pointer col-span-2 self-center">
+        <li className="relative hover:text-primary transition ease-linear duration-150 px-3 w-" id="login">
           Login
         </li>
         <li className="relative hover:text-primary transition ease-linear duration-150 px-3 mx-1" id="sign-up">

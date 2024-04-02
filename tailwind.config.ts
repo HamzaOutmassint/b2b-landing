@@ -40,6 +40,9 @@ const config = {
         // 'primary-gradient' : 'linear-gradient(108deg, #bfe5ff -102.41%, #3bacf9 32.94%)'
         'light-strok' : 'var(--light-strok)',
         'gray-light' : 'var(--gray-light)'
+      },
+      screens: {
+        "exactly-1024": { min: "1024px", max: "1024px" },
       }
     },
   },

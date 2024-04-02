@@ -42,17 +42,17 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
                                 <ul className='w-full flex justify-around font-bold text-lg text-black mt-8'>
                                     <li>
                                         <Link href='explore' className='flex items-center'>
-                                            <Compass size={20} /><span className='ml-2'>Explre</span>
+                                            <Compass size={20} /><span className='ml-2 underline'>Explre</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href='explore' className='flex items-center'>
-                                            <LockKeyhole size={20} /><span className='ml-2'>Login</span>
+                                            <LockKeyhole size={20} /><span className='ml-2 underline'>Login</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href='explore' className='flex items-center'>
-                                            <CircleUserRound size={20} /><span className='ml-2'>Sign up</span>
+                                            <CircleUserRound size={20} /><span className='ml-2 underline'>Sign up</span>
                                         </Link>
                                     </li>
                                 </ul>
