@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { BarChart, Search } from "lucide-react";
+import HeroSection from "@/components/Blocks/hero-section";
 
 export default function Home() {
   return (
-    <main className="bg-black h-screen text-white w-full">
-      <h1>hello world</h1>
-    </main>
+   <>
+    <HeroSection />
+   </>
   );
 }

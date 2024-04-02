@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { cn } from "@/lib/utils";
+
 import "./globals.css";
+
 import Header from "@/components/site-header";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const bodyFont = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-primary',
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,11 +21,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body>
-        <div className={montserrat.className}>
+      <body className={cn(
+            "min-h-screen bg-white font-sans antialiased",
+            bodyFont.variable
+          )}> 
           <Header/>
           {children}
-        </div>
       </body>
     </html>
   );

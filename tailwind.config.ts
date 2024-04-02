@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const config = {
   darkMode: ["class"],
@@ -43,7 +44,10 @@ const config = {
       },
       screens: {
         "exactly-1024": { min: "1024px", max: "1024px" },
-      }
+      },
+      fontFamily: {
+        sans: ["var(--font-primary)", ...fontFamily.sans],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
