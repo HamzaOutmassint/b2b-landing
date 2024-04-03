@@ -8,17 +8,17 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --font-primary:  'Montserrat', sans-serif;
-  --primary : #3BACF9;
-  --black : #0A1F44;
-  --gray-bold : #758196;
-  --white : #FFFFFF;
-  --light-strok : #A6AEBC;
-  --gray-light : #e8e8e8;
-  /* --gray-light : #F1F2F4; */
+  --font-primary: 'Montserrat', sans-serif;
+  --primary: #3BACF9;
+  --black: #0A1F44;
+  --gray-bold: #758196;
+  --white: #FFFFFF;
+  --light-strok: #A6AEBC;
+  --gray-light: #e8e8e8;
+  --navy-blue : #000080;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -30,19 +30,21 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* 
   ### start styling of navigation bar ###
 */
 
-#login::before, #sign-up::before, #explore::before {
+#login::before,
+#sign-up::before,
+#explore::before {
   content: '';
   position: absolute;
   bottom: -1.6rem;
@@ -56,21 +58,37 @@
   transition: transform 0.5s;
 }
 
-#login:hover::before, #sign-up:hover::before, #explore:hover::before {
+#login:hover::before,
+#sign-up:hover::before,
+#explore:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-#SheetDescriptio{
+#SheetDescriptio {
   margin-top: 1.6rem !important;
 }
 
 @media (min-width: 768px) and (max-width: 1024) {
-  #search-input-lg{
+  #search-input-lg {
     height: auto !important;
   }
 }
 
+
 /* 
-  ### end of styling ###
+  ### start styling of hero section ###
 */
+
+#blob {
+  background: radial-gradient(34.52% 100% at 50% 50%, #00ccac 0, #00ccac57);
+  border-radius: 1651.438px;
+  filter: blur(32.6193809509px);
+  flex-shrink: 0;
+  position: absolute;
+  right: -30%;
+  top: 63%;
+  width: 100%;
+  z-index: 0;
+  height: 13rem;
+}

@@ -13,7 +13,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: '1rem',
       screens: {
         "2xl": "1400px",
       },
@@ -40,9 +40,11 @@ const config = {
         'white' : 'var(--white)',
         // 'primary-gradient' : 'linear-gradient(108deg, #bfe5ff -102.41%, #3bacf9 32.94%)'
         'light-strok' : 'var(--light-strok)',
-        'gray-light' : 'var(--gray-light)'
+        'gray-light' : 'var(--gray-light)',
+        'navy-blue' : 'var(--navy-blue)'
       },
       screens: {
+        'xs': '374px',
         "exactly-1024": { min: "1024px", max: "1024px" },
       },
       fontFamily: {
