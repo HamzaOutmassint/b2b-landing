@@ -31,7 +31,7 @@ const HeroSection = () => {
                         </BreadcrumbList>
                     </Breadcrumb>
                 </div>
-                <div className="flex flex-col justify-center items-center mt-4 md:mt-8 lg:mt-12 xl:mt-7">
+                <div className="flex flex-col justify-center items-center mt-4 md:mt-8 lg:mt-16 xl:mt-10">
                     <h1 className="font-semibold text-3xl text-white tracking-wide xs:mb-3 md:mb-8">
                         The UK’s Top Sustainable Apparel Brands
                     </h1>
