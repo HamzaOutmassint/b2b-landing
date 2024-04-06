@@ -8,7 +8,7 @@ const BrandShowcase = () => {
   return (
     <div className='container mx-auto md:px-8 lg:px-24'>
       <div className="flex flex-col justify-center items-center xs:mt-12 md:mt-8 lg:mt-16 xl:mt-12">
-        <h1 className="font-semibold text-2xl text-black tracking-wide xs:mb-3 md:mb-8">
+        <h1 className="font-semibold text-2xl text-black tracking-wide mb-6">
           The UK’s Top Sustainable Apparel Brands Showcase
         </h1>
         <p className="md:text-center lg:px-52 xl:px-32 text-lg text-gray-bold">

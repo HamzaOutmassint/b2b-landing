@@ -7,7 +7,7 @@ import { Slash } from "lucide-react";
 const HeroSection = () => {
     return (
         <section className="relative min-h-[380px] bg-primary overflow-hidden xs:pb-10 md:pb-0">
-            <div id="blob-hero-section"></div>
+            <div id="blob-hero-section" className="top-[63%] h-52"></div>
             <div className="relative container mx-auto md:px-8 lg:px-24 z-20">
                 <div className=" top-0 lg:left-32 pt-4 md:pt-8 lg:pt-12">
                     <Breadcrumb>
@@ -32,7 +32,7 @@ const HeroSection = () => {
                     </Breadcrumb>
                 </div>
                 <div className="flex flex-col justify-center items-center mt-4 md:mt-8 lg:mt-16 xl:mt-10">
-                    <h1 className="font-semibold text-3xl text-white tracking-wide xs:mb-3 md:mb-8">
+                    <h1 className="font-semibold text-3xl text-white tracking-wide mb-6">
                         The UK’s Top Sustainable Apparel Brands
                     </h1>
                     <p className="md:text-center lg:px-52 xl:px-32 text-lg text-gray-light">
