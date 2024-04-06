@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Brands from '../brands-data';
+import MissingDataIcon from '../../public/assest/icons/missing-data.svg'
 
 const BrandShowcase = () => {
   return (
     <div className='h-screen container mx-auto md:px-8 lg:px-24'>
-      <div className="flex flex-col justify-center items-center mt-4 md:mt-8 lg:mt-16 xl:mt-12">
+      <div className="flex flex-col justify-center items-center xs:mt-12 md:mt-8 lg:mt-16 xl:mt-12">
         <h1 className="font-semibold text-2xl text-black tracking-wide xs:mb-3 md:mb-8">
           The UK’s Top Sustainable Apparel Brands Showcase
         </h1>
@@ -21,12 +22,15 @@ const BrandShowcase = () => {
           Brands.map((ele, index) => {
             return (
               <div className="flex flex-col bg-white p-4 rounded-lg" key={index}>
-                <div className='flex items-center justify-center self-center border border-black rounded-full p-4 mt-4 h-[100px] w-[100px]'>
+                <div className='flex items-center justify-center self-center border border-gray-light rounded-full p-4 mt-4 h-[100px] w-[100px]'>
                   <Image src={ele['image-path']} alt={`${ele.name} logo`} className='h-fit' />
                 </div>
                 <div className='my-6 pb-4 border-b border-gray-light'>
                   <h2 className='font-bold text-lg'>{ele.name}</h2>
-                  <span className='font-light text-[12px] text-gray-bold'>Missing data</span>
+                  <div className='flex font-light text-[12px] text-gray-bold'>
+                    <Image src={MissingDataIcon} alt='missing data icon' height={17}/>
+                    <span className='ml-2'> Missing data</span>
+                  </div>
                 </div>
                 <div className='grid grid-cols-2 gap-4'>
                   <Button className='bg-white hover:bg-primary text-primary hover:text-white border border-primary'>
