@@ -6,7 +6,7 @@ import MissingDataIcon from '../../public/assest/icons/missing-data.svg'
 
 const BrandShowcase = () => {
   return (
-    <div className='h-screen container mx-auto md:px-8 lg:px-24'>
+    <div className='container mx-auto md:px-8 lg:px-24'>
       <div className="flex flex-col justify-center items-center xs:mt-12 md:mt-8 lg:mt-16 xl:mt-12">
         <h1 className="font-semibold text-2xl text-black tracking-wide xs:mb-3 md:mb-8">
           The UK’s Top Sustainable Apparel Brands Showcase

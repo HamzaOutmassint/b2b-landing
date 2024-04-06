@@ -7,7 +7,7 @@ import { Slash } from "lucide-react";
 const HeroSection = () => {
     return (
         <section className="relative min-h-[380px] bg-primary overflow-hidden xs:pb-10 md:pb-0">
-            <div id="blob"></div>
+            <div id="blob-hero-section"></div>
             <div className="relative container mx-auto md:px-8 lg:px-24 z-20">
                 <div className=" top-0 lg:left-32 pt-4 md:pt-8 lg:pt-12">
                     <Breadcrumb>

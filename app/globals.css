@@ -38,6 +38,27 @@
   background: #888;
 }
 
+
+/* 
+  ### -------------------- ###
+*/
+
+#blob-hero-section , #blob-informative-content {
+  background: radial-gradient(34.52% 100% at 50% 50%, #00ccac 0, #00ccac57);
+  border-radius: 1651.438px;
+  filter: blur(32.6193809509px);
+  flex-shrink: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+#blob-hero-section{
+  right: -30%;
+}
+#blob-informative-content{
+  right: -45%;
+}
+
 /* 
   ### start styling of navigation bar ###
 */
@@ -73,24 +94,6 @@
   #search-input-lg {
     height: auto !important;
   }
-}
-
-
-/* 
-  ### start styling of hero section ###
-*/
-
-#blob {
-  background: radial-gradient(34.52% 100% at 50% 50%, #00ccac 0, #00ccac57);
-  border-radius: 1651.438px;
-  filter: blur(32.6193809509px);
-  flex-shrink: 0;
-  position: absolute;
-  right: -30%;
-  top: 63%;
-  width: 100%;
-  z-index: 0;
-  height: 13rem;
 }
 
 /* 
