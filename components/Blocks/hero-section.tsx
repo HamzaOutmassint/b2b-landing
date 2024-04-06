@@ -42,10 +42,10 @@ const HeroSection = () => {
                     </p>
                 </div>
                 <div className="xs:mt-7 md:mt-8 flex md:justify-center">
-                    <Button className="mr-4 text-base text-primary bg-white hover:bg-white hover:text-navy-blue  transition-all ease-linear duration-200">
+                    <Button className="mr-4 text-base text-primary bg-white hover:bg-white hover:text-navy-blue">
                         Browse Now
                     </Button>
-                    <Button className="mr-4 text-base text-white bg-primary hover:bg-navy-blue  transition-all ease-linear duration-200">
+                    <Button className="mr-4 text-base text-white bg-primary hover:bg-navy-blue">
                         Talk to an expert
                     </Button>
                 </div>

@@ -92,3 +92,12 @@
   z-index: 0;
   height: 13rem;
 }
+
+/* 
+  ### start styling of brands showcase section ###
+*/
+
+.brands > div{
+  box-sizing: border-box;
+  box-shadow: 0px 10px 60px 0px rgba(59, 172, 249, 0.2);
+}
