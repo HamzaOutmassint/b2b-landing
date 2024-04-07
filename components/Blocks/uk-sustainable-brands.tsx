@@ -1,3 +1,5 @@
+'use client';
+
 const UkSustainableBrands = () => {
     return (
         <div className="container mx-auto md:px-8 lg:px-24 py-12">
@@ -6,7 +8,7 @@ const UkSustainableBrands = () => {
                     Sustainable Brands in the United Kingdom
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 xs:gap-8 lg:gap-4 text-lg text-gray-bold">
-                    <div className="grid gap-8">
+                    <div className="grid gap-5">
                         <p>
                             Sustainable clothing brands in the United Kingdom are pivotal in
                             reshaping the fashion industry and driving positive change toward a
@@ -37,7 +39,7 @@ const UkSustainableBrands = () => {
                         </p>
                     </div>
                     <div>
-                        <p className="mb-8">
+                        <p className="mb-5">
                             Similarly, People Tree, a pioneer in sustainable fashion,
                             collaborates closely with Fair Trade artisans and farmers in
                             developing countries to produce clothing and accessories made from

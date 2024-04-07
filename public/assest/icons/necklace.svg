@@ -1,0 +1,9 @@
+<svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.8333 0.333344H28.5C28.5 7.23334 22.9 12.8333 16 12.8333C9.09999 12.8333 3.49999 7.23334 3.49999 0.333344H0.166656C0.24999 8.85001 6.98332 15.8167 15.5 16.1667C14.5 17.6667 12.6667 20.6667 12.6667 22C12.6667 26.45 19.3333 26.45 19.3333 22C19.3333 20.6667 17.5 17.6667 16.5 16.1667C25.0167 15.8167 31.75 8.85001 31.8333 0.333344Z" fill="url(#paint0_linear_0_1906)"/>
+<defs>
+<linearGradient id="paint0_linear_0_1906" x1="4.60192" y1="3.83545" x2="29.323" y2="35.1436" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00CCAC"/>
+<stop offset="1" stop-color="#43AEF6"/>
+</linearGradient>
+</defs>
+</svg>

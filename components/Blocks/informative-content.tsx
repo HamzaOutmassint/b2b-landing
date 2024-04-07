@@ -1,10 +1,12 @@
+'use client';
+
 import Image from 'next/image'
 import InformativeContentImage from '../../public/assest/logo/informativeContent.svg';
 
 const InformativeContent = () => {
     return (
         <div className='container mx-auto md:px-8 lg:px-24 bg-primary py-12 relative overflow-hidden'>
-            <div id="blob-informative-content" className='xs:h-[22rem] lg:h-52 xs:top-[63%] md:top-[54%] lg:top-[63%]'></div>
+            <div id="blob-informative-content" className='xs:h-[22rem] lg:h-52 xs:top-[75%] md:top-[54%] lg:top-[63%]'></div>
             <div className='grid grid-cols-1 exactly-1024:grid-cols-1 lg:grid-cols-2 gap-4 z-30'>
                 <div>
                     <h1 className="font-semibold text-2xl text-white tracking-wide mb-6">
