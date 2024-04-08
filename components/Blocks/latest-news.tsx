@@ -1,10 +1,14 @@
 'use client';
 
+import Image from 'next/image';
+import { Button } from '../ui/button';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import { Button } from '../ui/button';
+
+import Blogs from '../blogs-data';
 
 const LatestNews = () => {
     return (
@@ -18,10 +22,27 @@ const LatestNews = () => {
                 </p>
             </div>
             <div className='h-[40rem]'>
-                <Swiper navigation={{ nextEl: '.out', prevEl: '.in' , clickable: true}} modules={[Navigation]} className="mySwiper">
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
+                <Swiper
+                    navigation={{ nextEl: '.out', prevEl: '.in' }}
+                    modules={[Navigation]}
+                    slidesPerView={3} spaceBetween={15} loop={true}
+                    className="mySwiper">
+                    {
+                        Blogs.map((ele, index) => {
+                            return (
+                                <SwiperSlide key={index}>
+                                    <div className='relative'>
+                                        <span className='bg-white rounded-full px-4 py-2 absolute top-4 left-4 text-xs font-semibold hidden group-hover:flex'>Sustainable Supply Chains</span>
+                                        <div className='h-[202px] flex justify-center items-center overflow-hidden group '>
+                                            <Image src={ele['img-path']} alt={ele['title']} />
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+
                 </Swiper>
                 <div>
                     <Button className='out'>out</Button>
