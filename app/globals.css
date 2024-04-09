@@ -104,3 +104,16 @@
   box-sizing: border-box;
   box-shadow: 0px 10px 60px 0px rgba(59, 172, 249, 0.2);
 }
+
+
+/* 
+  ### start styling of explore section ###
+*/
+
+#explore-section{
+  background: linear-gradient(0deg,#0003,#0003),linear-gradient(0deg,#0003,#0003),linear-gradient(180deg,rgba(0,0,0,.2),transparent),linear-gradient(0deg,#3bacf942,#3bacf942),url(../public/assest/blogs-images/explore-section-img.jpeg),#d3d3d3 0 -618.098px/100% 334.447% no-repeat;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24rem;
+}

@@ -10,35 +10,51 @@ import ThoughtClothing from '../public/assest/logo/thoughtClothing.png';
 const Brands = [
     {
         "name" : "Tala",
-        "image-path" : Tala
+        "image-path" : Tala,
+        "view-brand-link":"https://www.commonshare.com/brands/tala",
+        "message-brand-link":"https://www.commonshare.com/companies/tala"
     },
     {
         "name" : "Pala",
-        "image-path" : Pala
+        "image-path" : Pala,
+        "view-brand-link":"https://www.commonshare.com/brands/pala",
+        "message-brand-link":"https://www.commonshare.com/companies/pala"
     },
     {
         "name" : "Komodo",
-        "image-path" : Komodo
+        "image-path" : Komodo,
+        "view-brand-link":"https://www.commonshare.com/brands/komodo",
+        "message-brand-link":"https://www.commonshare.com/companies/komodo"
     },
     {
         "name" : "People Tree",
-        "image-path" : PeopleTree
+        "image-path" : PeopleTree,
+        "view-brand-link":"https://www.commonshare.com/brands/people-tree",
+        "message-brand-link":"https://www.commonshare.com/companies/people-tree"
     },
     {
         "name" : "Rapanui",
-        "image-path" : Rapanui
+        "image-path" : Rapanui,
+        "view-brand-link":"https://www.commonshare.com/brands/rapanui",
+        "message-brand-link":"https://www.commonshare.com/companies/rapanui"
     },
     {
         "name" : "Finistrre",
-        "image-path" : Finistrre
+        "image-path" : Finistrre,
+        "view-brand-link":"https://www.commonshare.com/brands/finistrre",
+        "message-brand-link":"https://www.commonshare.com/companies/finistrre"
     },
     {
         "name" : "Stella McCartne",
-        "image-path" : StellaMcCartney
+        "image-path" : StellaMcCartney,
+        "view-brand-link":"https://www.commonshare.com/brands/stella-mccartney",
+        "message-brand-link":"https://www.commonshare.com/companies/stella-mccartney"
     },
     {
         "name" : "Thought Clothing",
-        "image-path" : ThoughtClothing
+        "image-path" : ThoughtClothing,
+        "view-brand-link":"",
+        "message-brand-link":""
     }
 ]
 

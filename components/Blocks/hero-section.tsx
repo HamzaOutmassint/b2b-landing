@@ -35,7 +35,7 @@ const HeroSection = () => {
                     <h1 className="font-semibold text-3xl text-white tracking-wide mb-6">
                         The UK’s Top Sustainable Apparel Brands
                     </h1>
-                    <p className="md:text-center lg:px-52 xl:px-32 text-lg text-gray-light">
+                    <p className="md:text-center exactly-1024:px-12 lg:px-52 xl:px-32 text-lg text-gray-light">
                         Discover our showcase of leading sustainable clothing brands in the United Kingdom.
                         Explore stylish options that prioritize environmental responsibility and societal impact,
                         with a focus on eco-friendly practices and ethical sourcing.

@@ -39,7 +39,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
                                 <Search className="absolute right-4 top-2.5 w-[17px] h-[17px]" />
                             </div>
                             <div>
-                                <ul className='w-full flex justify-around font-bold text-lg text-black mt-8'>
+                                <ul className='w-full flex justify-around font-bold text-lg text-black mt-9 pb-9'>
                                     <li>
                                         <Link href='explore' className='flex items-center'>
                                             <Compass size={20} /><span className='ml-2 underline'>Explore</span>

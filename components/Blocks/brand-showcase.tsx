@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import Brands from '../brands-data';
 import MissingDataIcon from '../../public/assest/icons/missing-data.svg'
+import Link from 'next/link';
 
 const BrandShowcase = () => {
   return (
@@ -12,7 +13,7 @@ const BrandShowcase = () => {
         <h1 className="font-semibold text-2xl text-black tracking-wide mb-6">
           The UK’s Top Sustainable Apparel Brands Showcase
         </h1>
-        <p className="md:text-center lg:px-52 xl:px-32 text-lg text-gray-bold">
+        <p className="md:text-center exactly-1024:px-12 lg:px-52 xl:px-32 text-lg text-gray-bold">
           Explore our curated collection featuring premier sustainable clothing brands based in the United Kingdom.
           Discover fashion-forward options that emphasize eco-friendly practices and ethical sourcing,
           placing a strong emphasis on environmental responsibility and positive social impact.
@@ -29,17 +30,21 @@ const BrandShowcase = () => {
                 <div className='my-6 pb-4 border-b border-gray-light'>
                   <h2 className='font-bold text-lg'>{ele.name}</h2>
                   <div className='flex font-light text-[12px] text-gray-bold'>
-                    <Image src={MissingDataIcon} alt='missing data icon' height={17}/>
+                    <Image src={MissingDataIcon} alt='missing data icon' height={17} />
                     <span className='ml-2'> Missing data</span>
                   </div>
                 </div>
                 <div className='grid grid-cols-2 gap-4'>
-                  <Button className='bg-white hover:bg-primary text-primary hover:text-white border border-primary'>
-                    View
-                  </Button>
-                  <Button className='text-white bg-primary hover:bg-navy-blue'>
-                    Message
-                  </Button>
+                  <Link href={ele['view-brand-link']}>
+                    <Button className='w-full bg-white hover:bg-primary text-primary hover:text-white border border-primary'>
+                      View
+                    </Button>
+                  </Link>
+                  <Link href={ele['message-brand-link']}>
+                    <Button className=' w-full text-white bg-primary hover:bg-navy-blue'>
+                      Message
+                    </Button>
+                  </Link>
                 </div>
               </div>
             )

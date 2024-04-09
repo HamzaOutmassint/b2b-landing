@@ -1,4 +1,5 @@
 import BrandShowcase from "@/components/Blocks/brand-showcase";
+import ExploreSection from "@/components/Blocks/explore-section";
 import HeroSection from "@/components/Blocks/hero-section";
 import InformativeContent from "@/components/Blocks/informative-content";
 import LatestNews from "@/components/Blocks/latest-news";
@@ -16,6 +17,7 @@ export default function Home() {
     <SustainablePartnerships />
     <SpecificBrands />
     <LatestNews />
+    <ExploreSection />
    </>
   );
 }
