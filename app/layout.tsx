@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 import Header from "@/components/site-header";
+import Footer from "@/components/footer";
 
 const bodyFont = Montserrat({
   subsets: ['latin'],
@@ -21,12 +22,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={cn(
-            "min-h-screen bg-white font-sans antialiased",
-            bodyFont.variable
-          )}> 
-          <Header/>
+      <body className={cn("min-h-screen bg-white font-sans antialiased", bodyFont.variable)}>
+        <Header />
           {children}
+        <Footer />
       </body>
     </html>
   );
