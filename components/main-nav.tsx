@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { Input } from "./ui/input"
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, } from "@/components/ui/select"
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import {Search } from "lucide-react";
 
 type ImageProp = string | StaticImageData;

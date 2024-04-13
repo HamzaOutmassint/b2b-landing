@@ -13,7 +13,7 @@ const ExploreSection = () => {
                         Join the world&apos;s fastest growing sustainable procurement platform.
                     </h2>
                 </div>
-                <Link href='/companies'>
+                <Link href='https://www.commonshare.com/companies'>
                     <Button className="bg-white hover:bg-primary text-primary hover:text-white text-base">
                         Find Partners Now
                     </Button>
