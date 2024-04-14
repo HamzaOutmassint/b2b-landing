@@ -2,9 +2,9 @@ import { CircleUserRound, Compass, LockKeyhole, Menu, Search } from 'lucide-reac
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, } from "@/components/ui/sheet"
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import React from 'react'
-import { Input } from './ui/input'
+import { Input } from '../ui/input'
 
 type ImageProp = string | StaticImageData
 interface MobileNavProps {
@@ -26,12 +26,10 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
                 >
                     <Menu color="black" />
                 </Button>
-                <SheetContent side='top'>
+                <SheetContent side='top' onOpenAutoFocus={(e) => e.preventDefault()}>
                     <SheetHeader>
                         <SheetTitle>
-                            <Link href='/'>
-                                <Image src={commonShareLogo} priority={true} alt="common share logo" height={30} />
-                            </Link>
+                            <Image src={commonShareLogo} priority={true} alt="common share logo" height={30} />
                         </SheetTitle>
                         <SheetDescription id='SheetDescriptio'>
                             <div className="relative items-center ml-[2px]">
@@ -41,17 +39,17 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
                             <div>
                                 <ul className='w-full flex justify-around font-bold text-lg text-black mt-9 pb-9'>
                                     <li>
-                                        <Link href='explore' className='flex items-center'>
+                                        <Link href='https://marketplace.commonshare.com/' className='flex items-center'>
                                             <Compass size={20} /><span className='ml-2 underline'>Explore</span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='explore' className='flex items-center'>
+                                        <Link href='#explore' className='flex items-center'>
                                             <LockKeyhole size={20} /><span className='ml-2 underline'>Login</span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='explore' className='flex items-center'>
+                                        <Link href='https://www.commonshare.com/register' className='flex items-center'>
                                             <CircleUserRound size={20} /><span className='ml-2 underline'>Sign up</span>
                                         </Link>
                                     </li>

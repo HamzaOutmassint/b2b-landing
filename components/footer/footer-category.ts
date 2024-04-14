@@ -20,23 +20,23 @@ export interface FooterContent {
 
 const footerContent: FooterContent = {
     solutions: [
-        { text: "Sustainable Procurement", href: "#" },
-        { text: "Responsible Sourcing", href: "#" },
-        { text: "ESG Communication", href: "#" },
-        { text: "Trade Compliance", href: "#" }
+        { text: "Sustainable Procurement", href: "https://business.commonshare.com/sustainable-procurement" },
+        { text: "Responsible Sourcing", href: "https://business.commonshare.com/responsible-sourcing" },
+        { text: "ESG Communication", href: "https://business.commonshare.com/authentic-esg-communication" },
+        { text: "Trade Compliance", href: "https://business.commonshare.com/trade-compliance" }
     ],
     company: [
-        { text: "News", href: "#news" },
-        { text: "About Us", href: "#" }
+        { text: "News", href: "https://news.commonshare.com" },
+        { text: "About Us", href: "https://www.commonshare.com/about-us" }
     ],
     regulations: [
-        { text: "AGEC", href: "#" },
-        { text: "UFPLA", href: "#" },
-        { text: "UK Modern Slavery", href: "#" },
-        { text: "EU Green Claims", href: "#" },
-        { text: "EU Digital Product Passport", href: "#" },
-        { text: "German Supply Chain Act", href: "#" },
-        { text: "Canada Forced Labor", href: "#" }
+        { text: "AGEC", href: "https://www.commonshare.com/agec" },
+        { text: "UFPLA", href: "https://www.commonshare.com/uflpa" },
+        { text: "UK Modern Slavery", href: "https://www.commonshare.com/uk-modern-slavery" },
+        { text: "EU Green Claims", href: "https://www.commonshare.com/eu-green-claims" },
+        { text: "EU Digital Product Passport", href: "https://www.commonshare.com/eu-digital-product-passport" },
+        { text: "German Supply Chain Act", href: "https://www.commonshare.com/german-supply-chain-act" },
+        { text: "Canada Forced Labor", href: "https://www.commonshare.com/canada-forced-labor-in-supply-chain-act" }
     ],
     manufacturers: [
         { text: "US Top Clothing Manufacturers", href: "#" },

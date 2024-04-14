@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 
-import Header from "@/components/site-header";
-import Footer from "@/components/footer";
+import Header from "@/components/navigation/site-header";
+import Footer from "@/components/footer/footer";
 
 const bodyFont = Montserrat({
   subsets: ['latin'],

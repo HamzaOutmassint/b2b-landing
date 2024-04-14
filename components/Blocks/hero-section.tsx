@@ -3,6 +3,7 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, } from "@/components/ui/breadcrumb"
 import { Button } from "../ui/button";
 import { Slash } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
     return (
@@ -10,10 +11,10 @@ const HeroSection = () => {
             <div id="blob-hero-section" className="top-[63%] h-52"></div>
             <div className="relative container mx-auto md:px-8 lg:px-24 z-20">
                 <div className=" top-0 lg:left-32 pt-4 md:pt-8 lg:pt-12">
-                    <Breadcrumb>
+                    <Breadcrumb className="pb-6 md:pb-0">
                         <BreadcrumbList>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="/" className="text-gray-light hover:text-white">
+                                <BreadcrumbLink href="https://marketplace.commonshare.com/" className="text-gray-light hover:text-white">
                                     Marketplace
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
@@ -42,12 +43,16 @@ const HeroSection = () => {
                     </p>
                 </div>
                 <div className="xs:mt-7 md:mt-8 flex md:justify-center">
-                    <Button className="mr-4 text-base text-primary bg-white hover:bg-white hover:text-navy-blue">
-                        Browse Now
-                    </Button>
-                    <Button className="mr-4 text-base text-white bg-primary hover:bg-navy-blue">
-                        Talk to an expert
-                    </Button>
+                    <Link href='https://www.commonshare.com/companies'>
+                        <Button className="mr-4 text-base text-primary bg-white hover:bg-white hover:text-navy-blue">
+                            Browse Now
+                        </Button>
+                    </Link>
+                    <Link href='https://commonshare.hubspotpagebuilder.com/applytojoin'>
+                        <Button className="mr-4 text-base text-white bg-primary hover:bg-navy-blue">
+                            Talk to an expert
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

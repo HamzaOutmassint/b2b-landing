@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
-import { Input } from "./ui/input"
+import { Input } from "../ui/input"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue, } from "@/components/ui/select"
 import {Search } from "lucide-react";
 
@@ -43,7 +43,7 @@ const MainNav : React.FC<MainNavProps> = ({commonShareLogo}) => {
           <Link href='https://www.commonshare.com/register'> Sign up </Link>
         </li>
         <li className="relative hover:text-primary transition ease-linear duration-150 px-3" id="explore">
-          <Link href='https://www.commonshare.com/companies'>Explore</Link>
+          <Link href='https://marketplace.commonshare.com/'>Explore</Link>
         </li>
       </ul>
     </nav>

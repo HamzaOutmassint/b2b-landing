@@ -1,35 +1,25 @@
+'use client';
+
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import footerContent from "./footer-category";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import NewsLetterForm from "./newsLetterForm";
 
 export default function Footer() {
     return (
         <footer className="container mx-auto px-4">
-            <div className="flex flex-col items-center justify-center gap-4 pb-16 border-b border-gray-light">
-                <h1 className="text-3xl font-bold">
-                    Stay in Touch
-                </h1>
-                <span className="text-base text-gray-bold text-center">
-                    Sign up for our global brief on all things sustainable.
-                </span>
-                <div className="flex gap-4">
-                    <Input type="email" className="border border-gray-light md:w-96 bg-[#F8F8F8] focus-visible:ring-offset-0" placeholder="Email Address" />
-                    <Button className="bg-white hover:bg-primary text-primary hover:text-white border border-primary">
-                        Subscribe
-                    </Button>
-                </div>
-            </div>
+            <NewsLetterForm />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-4 pb-12 border-b border-gray-light">
                 <div>
-                    <h1 className="font-semibold text-lg mb-4 uppercase">Our Solutions</h1>
+                    <h1 className="font-semibold text-lg mb-4 uppercase">
+                        <Link target='_blank' href='https://business.commonshare.com/'> Our Solutions</Link>
+                    </h1>
                     {
                         footerContent.solutions.map((ele, index) => {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="max-w-fit hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -37,13 +27,15 @@ export default function Footer() {
                     }
                 </div>
                 <div>
-                    <h1 className="font-semibold text-lg mb-4 uppercase">Our Company</h1>
+                    <h1 className="font-semibold text-lg mb-4 uppercase">
+                        <Link target='_blank' href='https://business.commonshare.com/'> Our Company </Link>
+                    </h1>
                     {
                         footerContent.company.map((ele, index) => {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="max-w-fit hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -51,13 +43,15 @@ export default function Footer() {
                     }
                 </div>
                 <div>
-                    <h1 className="font-semibold text-lg mb-4 uppercase">REGULATIONS </h1>
+                    <h1 className="font-semibold text-lg mb-4 uppercase">
+                       <Link target='_blank' href='https://business.commonshare.com/'> REGULATIONS </Link>
+                    </h1>
                     {
                         footerContent.regulations.map((ele, index) => {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="max-w-fit hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -88,7 +82,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="max-w-fit hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -133,7 +127,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="max-w-fit hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -147,7 +141,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -164,7 +158,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -178,7 +172,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -192,7 +186,7 @@ export default function Footer() {
                             return (
                                 <ul className="flex flex-col gap-2" key={index}>
                                     <li className="hover:text-primary transition duration-150 ease-linear my-1">
-                                        <Link href={`${ele.href}`}> {ele.text} </Link>
+                                        <Link target='_blank' href={`${ele.href}`}> {ele.text} </Link>
                                     </li>
                                 </ul>
                             )
@@ -200,26 +194,39 @@ export default function Footer() {
                     }
                 </div>
             </div>
-            <div className="flex items-center justify-between">
-                <ul className="flex">
+            <div className="grid grid-cols-1 md:grid-cols-2 exactly-1024:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 pb-4">
+                <ul className="flex gap-4">
                     <li>
-                        <Linkedin
-                            color="white"
-                            className="bg-primary" />
+                        <Link target='_blank' href='https://www.linkedin.com/company/commonshare' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                            <Linkedin className="text-primary" />
+                        </Link>
                     </li>
                     <li>
-                        <Instagram
-                            className="text-primary"/>
-                        />
+                        <Link target='_blank' href='https://www.instagram.com/commonshare_' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                            <Instagram className="text-primary" />
+                        </Link>
                     </li>
                     <li>
-                        <Twitter
-                            className="text-primary"/>
-                        />
+                        <Link target='_blank' href='https://twitter.com/commonshare_' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                            <Twitter className="text-primary" />
+                        </Link>
                     </li>
                 </ul>
-                <div>sdf</div>
-                <div>df</div>
+                <div className="hidden exactly-1024:hidden lg:flex">Copyright © 2024 <Link href='https://www.commonshare.com/' className="font-semibold"> CommonShare</Link>.All rights reserved.</div>
+                <ul className="flex flex-col md:flex-row gap-4 md:justify-end">
+                    <li>
+                        <Link target='_blank' href='https://www.commonshare.com/policies/terms' className="hover:text-primary underline md:no-underline"> Terms of Service </Link>
+                    </li>
+                    <li>
+                        <Link target='_blank' href='https://www.commonshare.com/policies/privacy' className="hover:text-primary underline md:no-underline"> Privacy Policy </Link>
+                    </li>
+                    <li>
+                        <Link target='_blank' href='https://www.commonshare.com/policies/privacy' className="hover:text-primary underline md:no-underline"> sitemap </Link>
+                    </li>
+                </ul>
+            </div>
+            <div className="lg:hidden exactly-1024:block block text-xs md:text-base text-center mt-8 pb-4">
+                Copyright © 2024 <Link target="_blank" href='https://www.commonshare.com/' className="font-semibold"> CommonShare</Link>.All rights reserved.
             </div>
         </footer>
     )

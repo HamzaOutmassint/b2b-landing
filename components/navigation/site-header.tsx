@@ -1,7 +1,7 @@
 "use client";
 import MainNav from "./main-nav";
 import MobileNav from "./mobile-nav";
-import commonShareLogo from '../public/assest/logo/commonShare-logo.svg';
+import commonShareLogo from '../../public/assest/logo/commonShare-logo.svg';
 
 const Header = () => {
   return (
