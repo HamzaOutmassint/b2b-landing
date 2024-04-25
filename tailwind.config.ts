@@ -38,7 +38,7 @@ const config = {
         'black' : 'var(--black)',
         'gray-bold' : 'var(--gray-bold)',
         'white' : 'var(--white)',
-        // 'primary-gradient' : 'linear-gradient(108deg, #bfe5ff -102.41%, #3bacf9 32.94%)'
+        'errors' : 'var(--errors)',
         'light-strok' : 'var(--light-strok)',
         'gray-light' : 'var(--gray-light)',
         'navy-blue' : 'var(--navy-blue)'

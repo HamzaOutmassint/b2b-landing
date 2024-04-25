@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
@@ -12,6 +12,7 @@ const NewsLetterForm: React.FC<NewsLetterFormProps> = () => {
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('')
   const [status, setStatus] = useState<number | null>()
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
 
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -20,39 +21,52 @@ const NewsLetterForm: React.FC<NewsLetterFormProps> = () => {
   const subscribeUser = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    try {
-      const response = await axios.post('/api/subscribeUser', { email: email })
+    if (emailRegex.test(email)) {
+      try {
+        const response = await axios.post('/api/subscribeUser', { email: email })
 
-      // console.log(response.data.message)
-      if (response.status == 200) {
-        setStatus(response.status)
-        setMessage(response.data.message)
+        if (response.status === 200) {
+          setStatus(response.status)
+          setMessage(response.data.message)
+          setEmail('');
+          setClearTimeoutMessage(4000);
+        }
+      } catch (error) {
+        setStatus(error.response.status)
+        setMessage(error.response.data.message)
         setEmail('');
-
-        setTimeout(() => {
-          setMessage('');
-        }, 500);
-
-      } else {
-        setStatus(response.status)
-        setMessage(response.data.message)
-        setEmail('');
-
-        setTimeout(() => {
-          setMessage('');
-        }, 500);
-
+        setClearTimeoutMessage(4000);
       }
-    } catch (error) {
-      // Handle error
-      alert('An error occurred. Please try again later.');
+
+    } else if (email === '') {
+      setStatus(400)
+      setMessage('Email is required')
+      setClearTimeoutMessage(4000);
+
+    } else {
+      setStatus(400)
+      setMessage('Invalid email. Please correct the email and try again')
+      setClearTimeoutMessage(4000);
+
     }
   };
 
+  const setClearTimeoutMessage = (timeout: number) => {
+    const timer = setTimeout(() => {
+      setMessage('');
+    }, timeout);
+
+    return () => clearTimeout(timer);
+  };
+
+  useEffect(() => {
+    return setClearTimeoutMessage(0);
+  }, []);
+
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 pb-16 border-b border-gray-light">
-      <h1 className="text-3xl font-bold">
+    <div className="flex flex-col md:items-center gap-4 pb-16 border-b border-gray-light">
+      <h1 className="text-3xl font-bold text-center">
         Stay in Touch
       </h1>
       <span className="text-base text-gray-bold text-center">
@@ -79,9 +93,11 @@ const NewsLetterForm: React.FC<NewsLetterFormProps> = () => {
             Subscribe
           </Button>
         </form>
-        <span className={`${status == 200 ? 'bg-primary' : 'bg-red'} md:w-96 py-2 px-1 md:px-2 rounded-md text-sm`}>
-          {message}
-        </span>
+        {
+          message !== '' && <span className={`${status === 200 ? 'bg-primary' : 'bg-errors text-white'} md:w-96 py-2 px-1 md:px-2 rounded-md text-sm`}>
+            {message}
+          </span>
+        }
       </div>
     </div>
   )
