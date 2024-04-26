@@ -32,7 +32,7 @@ const MainNav: React.FC<MainNavProps> = ({ commonShareLogo, toggleModal }) => {
             </SelectContent>
           </Select>
           <div className="relative items-center ml-[2px]">
-            <Input type="text" placeholder="Search Sustainable Companies" className="lg:w-[28rem] md:w-72 exactly-1024:w-80 lg:text-sm md:text-xs border-y border-r border-l-none border-gray-light lg:px-4 lg:py-2  focus-visible:ring-offset-0 rounded-l-none rounded-r-2xl" id="search-input-lg" />
+            <Input type="text" placeholder="Search Sustainable Companies" className="lg:w-[28rem] md:w-72 exactly-1024:w-80 lg:text-sm md:text-xs border-y border-r border-l-none border-gray-light lg:px-4 lg:py-2 rounded-l-none rounded-r-2xl" id="search-input-lg" />
             <Search className="absolute right-4 lg:top-2.5 md:top-2 w-[17px] h-[17px]" />
           </div>
         </form>
