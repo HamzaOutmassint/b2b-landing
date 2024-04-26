@@ -8,9 +8,10 @@ import { Input } from '../ui/input'
 
 type ImageProp = string | StaticImageData
 interface MobileNavProps {
-    commonShareLogo: ImageProp
+    commonShareLogo: ImageProp,
+    toggleModal: () => void
 }
-const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
+const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo, toggleModal }) => {
     const [open, setOpen] = React.useState(false)
 
     return (
@@ -43,10 +44,8 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo }) => {
                                             <Compass size={20} /><span className='ml-2 underline'>Explore</span>
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href='#explore' className='flex items-center'>
-                                            <LockKeyhole size={20} /><span className='ml-2 underline'>Login</span>
-                                        </Link>
+                                    <li className='flex items-center' onClick={()=>{toggleModal(); setOpen(!open); }}>
+                                        <LockKeyhole size={20} /><span className='ml-2 underline'>Login</span>
                                     </li>
                                     <li>
                                         <Link href='https://www.commonshare.com/register' className='flex items-center'>
