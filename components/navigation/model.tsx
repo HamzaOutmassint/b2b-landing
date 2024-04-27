@@ -25,11 +25,11 @@ const Model: React.FC<modelProps> = ({ toggleModal, commonShareLogoWhite }) => {
                 </div>
                 <form className="flex flex-col gap-4 px-6 py-5">
                     <div className="">
-                        <Label htmlFor="email" className="text-gray-bold ">Email Address</Label>
+                        <Label htmlFor="email" className="text-black ">Email Address</Label>
                         <Input type="text" className="border border-gray-light mt-1" id="email" placeholder="Email Address" />
                     </div>
                     <div className="flex flex-col">
-                        <Label htmlFor="email" className="text-gray-bold ">Password</Label>
+                        <Label htmlFor="email" className="text-black ">Password</Label>
                         <Input type="text" className="border border-gray-light mt-1" id="email" placeholder="Password" />
                         <Link href='https://www.commonshare.com/password/reset' className="self-end text-sm mt-2 text-blue-500 hover:text-blue-600">
                             Forgot password?
