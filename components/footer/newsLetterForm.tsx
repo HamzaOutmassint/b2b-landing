@@ -4,7 +4,7 @@ import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
-import axios from 'axios';
+import axios , {AxiosError} from 'axios';
 
 interface NewsLetterFormProps { }
 
@@ -32,8 +32,10 @@ const NewsLetterForm: React.FC<NewsLetterFormProps> = () => {
           setClearTimeoutMessage(4000);
         }
       } catch (error) {
-        setStatus(error.response.status)
-        setMessage(error.response.data.message)
+        if (axios.isAxiosError(error)) {
+          setStatus(error.response?.status)
+          setMessage(error.response?.data.message)
+        }
         setEmail('');
         setClearTimeoutMessage(4000);
       }
