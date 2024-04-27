@@ -41,7 +41,7 @@ const Model: React.FC<modelProps> = ({ toggleModal, commonShareLogoWhite }) => {
                 </form>
                 <div className='px-6 pb-5 pt-3 text-center text-xs text-black'>
                     Don&apos;t have an account?
-                    <Link href='https://www.commonshare.com/register' className='text-blue-500 pl-1'>
+                    <Link href='https://www.commonshare.com/register' className='text-blue-500 pl-1 hover:underline'>
                         Register here.
                     </Link>
                 </div>

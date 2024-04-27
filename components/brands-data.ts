@@ -53,8 +53,8 @@ const Brands = [
     {
         "name" : "Thought Clothing",
         "image-path" : ThoughtClothing,
-        "view-brand-link":"",
-        "message-brand-link":""
+        "view-brand-link":"https://www.commonshare.com/brands/thought-clothing",
+        "message-brand-link":"https://www.commonshare.com/companies/thought-clothing"
     }
 ]
 

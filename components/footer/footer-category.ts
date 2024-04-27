@@ -39,67 +39,67 @@ const footerContent: FooterContent = {
         { text: "Canada Forced Labor", href: "https://www.commonshare.com/canada-forced-labor-in-supply-chain-act" }
     ],
     manufacturers: [
-        { text: "US Top Clothing Manufacturers", href: "#" },
-        { text: "UK Top Clothing Manufacturers", href: "#" },
-        { text: "Italy Top Clothing Manufacturers", href: "#" },
-        { text: "Turkey Top Clothing Manufacturers", href: "#" },
-        { text: "Portugal Top Clothing Manufacturers", href: "#" }
+        { text: "US Top Clothing Manufacturers", href: "#US-Top-Clothing-Manufacturers" },
+        { text: "UK Top Clothing Manufacturers", href: "#UK-Top-Clothing-Manufacturers" },
+        { text: "Italy Top Clothing Manufacturers", href: "#Italy-Top-Clothing Manufacturers" },
+        { text: "Turkey Top Clothing Manufacturers", href: "#Turkey-Top-Clothing-Manufacturers" },
+        { text: "Portugal Top Clothing Manufacturers", href: "#Portugal-Top-Clothing-Manufacturers" }
     ],
     fabricMillsByLocation: [
-        { text: "Italy Top Fabric Mills", href: "#" },
-        { text: "Turkey Top Fabric Mills", href: "#" },
-        { text: "Portugal Top Fabric Mills", href: "#" },
-        { text: "UK Top Fabric Mills", href: "#" },
-        { text: "Vietnam Top Fabric Mills", href: "#" }
+        { text: "Italy Top Fabric Mills", href: "#Italy-Top-Fabric-Mills" },
+        { text: "Turkey Top Fabric Mills", href: "#Turkey-Top-Fabric-Mills" },
+        { text: "Portugal Top Fabric Mills", href: "#Portugal-Top-Fabric-Mills" },
+        { text: "UK Top Fabric Mills", href: "#UK-Top-Fabric-Mills" },
+        { text: "Vietnam Top Fabric Mills", href: "#Vietnam-Top-Fabric-Mills" }
     ],
     fabricMillsByContent: [
-        { text: "Top Organic Cotton Fabric Mills", href: "#" },
-        { text: "Top Linen Fabric Mills", href: "#" },
-        { text: "Top Recycled Fabric Mills", href: "#" },
-        { text: "Top Tencel Fabric Mills", href: "#" },
-        { text: "Top Viscose Fabric Mills", href: "#" }
+        { text: "Top Organic Cotton Fabric Mills", href: "#Top-Organic-Cotton-Fabric-Mills" },
+        { text: "Top Linen Fabric Mills", href: "#Top-Linen-Fabric-Mills" },
+        { text: "Top Recycled Fabric Mills", href: "#Top-Recycled-Fabric-Mills" },
+        { text: "Top Tencel Fabric Mills", href: "#Top-Tencel-Fabric-Mills" },
+        { text: "Top Viscose Fabric Mills", href: "#Top-Viscose-Fabric-Mills" }
     ],
     ByGeography: [
-        { text: "US Top Sustainable Brands", href: "#" },
-        { text: "UK Top Sustainable Brands", href: "#" },
-        { text: "France Top Sustainable Brands", href: "#" },
-        { text: "German Top Sustainable Brands", href: "#" },
-        { text: "Spain Top Sustainable Brands", href: "#" }
+        { text: "US Top Sustainable Brands", href: "#US-Top-Sustainable-Brands" },
+        { text: "UK Top Sustainable Brands", href: "#UK-Top-Sustainable-Brands" },
+        { text: "France Top Sustainable Brands", href: "#France-Top-Sustainable-Brands" },
+        { text: "German Top Sustainable Brands", href: "#German-Top-Sustainable-Brands" },
+        { text: "Spain Top Sustainable Brands", href: "#Spain-Top-Sustainable-Brands" }
     ],
     ByEndUse: [
-        { text: "Sustainable Swimwear Brands", href: "#" },
-        { text: "Sustainable Lingerie Brands", href: "#" },
-        { text: "Sustainable Workwear Brands", href: "#" },
-        { text: "Sustainable Underwear Brands", href: "#" },
-        { text: "Sustainable Shoe Brands", href: "#" }
+        { text: "Sustainable Swimwear Brands", href: "#Sustainable-Swimwear-Brands" },
+        { text: "Sustainable Lingerie Brands", href: "#Sustainable-Lingerie-Brands" },
+        { text: "Sustainable Workwear Brands", href: "#Sustainable-Workwear-Brands" },
+        { text: "Sustainable Underwear Brands", href: "#Sustainable-Underwear-Brands" },
+        { text: "Sustainable Shoe Brands", href: "#Sustainable-Shoe-Brands" }
     ],
     ByContent: [
-        { text: "Organic Clothing Brands", href: "#" },
-        { text: "Pima Cotton Brands", href: "#" },
-        { text: "Fair-trade Clothing Brands", href: "#" },
-        { text: "Recycled Clothing Brands", href: "#" },
-        { text: "Vegan Clothing Brands", href: "#" }
+        { text: "Organic Clothing Brands", href: "#Organic-Clothing-Brands" },
+        { text: "Pima Cotton Brands", href: "#Pima-Cotton-Brands" },
+        { text: "Fair-trade Clothing Brands", href: "#Fair-trade-Clothing-Brands" },
+        { text: "Recycled Clothing Brands", href: "#Recycled-Clothing-Brands" },
+        { text: "Vegan Clothing Brands", href: "#Vegan-Clothing-Brands" }
     ],
     Expertise: [
-        { text: "Life Cycle Analysis", href: "#" },
-        { text: "Double Materiality Analysis", href: "#" },
-        { text: "Scope 3 Emissions", href: "#" },
-        { text: "Supply Chain Mapping", href: "#" },
-        { text: "Environmental Product Declarations", href: "#" }
+        { text: "Life Cycle Analysis", href: "#Life-Cycle-Analysis" },
+        { text: "Double Materiality Analysis", href: "#Double-Materiality-Analysis" },
+        { text: "Scope 3 Emissions", href: "#Scope-3-Emissions" },
+        { text: "Supply Chain Mapping", href: "#Supply-Chain-Mapping" },
+        { text: "Environmental Product Declarations", href: "#Environmental-Product-Declarations" }
     ],
     Certifications: [
-        { text: "Organic Certification", href: "#" },
-        { text: "Fair Trade Certification", href: "#" },
-        { text: "FSC Forest Certification", href: "#" },
-        { text: "Global Recycled Standard", href: "#" },
-        { text: "B Corp Certification", href: "#" }
+        { text: "Organic Certification", href: "#Organic-Certification" },
+        { text: "Fair Trade Certification", href: "#Fair-Trade-Certification" },
+        { text: "FSC Forest Certification", href: "#FSC-Forest-Certification" },
+        { text: "Global Recycled Standard", href: "#Global-Recycled-Standard" },
+        { text: "B Corp Certification", href: "#B-Corp-Certification" }
     ],
     ConsultingServices: [
-        { text: "ESG Experts", href: "#" },
-        { text: "LCA Expert", href: "#" },
-        { text: "CSRD Experts", href: "#" },
-        { text: "ESRS Experts", href: "#" },
-        { text: "SFDR Experts", href: "#" }
+        { text: "ESG Experts", href: "#ESG-Experts" },
+        { text: "LCA Expert", href: "#LCA-Expert" },
+        { text: "CSRD Experts", href: "#CSRD-Experts" },
+        { text: "ESRS Experts", href: "#ESRS-Experts" },
+        { text: "SFDR Experts", href: "#SFDR-Experts" }
     ],
 };
 

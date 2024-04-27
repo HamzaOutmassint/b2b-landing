@@ -26,8 +26,10 @@ const MainNav: React.FC<MainNavProps> = ({ commonShareLogo, toggleModal }) => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="apple">Apple</SelectItem>
-                <SelectItem value="banana">Sumsang</SelectItem>
+                <SelectItem value="wally's">Wally&apos;s</SelectItem>
+                <SelectItem value="río sul">Río Sul</SelectItem>
+                <SelectItem value="calin s a">Calin S A</SelectItem>
+                <SelectItem value="crio bru">Crio Bru</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>
