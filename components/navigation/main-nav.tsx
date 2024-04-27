@@ -20,7 +20,7 @@ const MainNav: React.FC<MainNavProps> = ({ commonShareLogo, toggleModal }) => {
           <Image src={commonShareLogo} priority={true} alt="common share logo" className="lg:h-[30px] md:h-5 w-fit" />
         </Link>
         <form className="lg:text-sm md:text-xs col-span-3 flex self-start justify-center items-center border border-gray-light rounded-2xl">
-          <Select>
+          <Select name="companies">
             <SelectTrigger>
               <SelectValue placeholder="Companies" />
             </SelectTrigger>

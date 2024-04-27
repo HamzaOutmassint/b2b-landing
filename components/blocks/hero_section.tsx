@@ -14,7 +14,7 @@ const HeroSection = () => {
                     <Breadcrumb className="pb-6 md:pb-0">
                         <BreadcrumbList>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="https://marketplace.commonshare.com/" className="text-gray-light hover:text-white">
+                                <BreadcrumbLink href="https://marketplace.commonshare.com/" className="text-white hover:text-gray-light">
                                     Marketplace
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center mt-4 md:mt-8 lg:mt-16 xl:mt-10">
                     <h1 className="font-semibold text-3xl text-white tracking-wide mb-6">
-                        The UK’s Top Sustainable Apparel Brands
+                        The UK&apos;s Top Sustainable Apparel Brands
                     </h1>
                     <p className="md:text-center exactly-1024:px-12 lg:px-52 xl:px-32 text-lg text-gray-light">
                         Discover our showcase of leading sustainable clothing brands in the United Kingdom.

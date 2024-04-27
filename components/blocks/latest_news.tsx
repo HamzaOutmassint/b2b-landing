@@ -74,11 +74,11 @@ const LatestNews = () => {
 
                 </Swiper>
                 <div className='flex items-center justify-center mt-10'>
-                    <Button className='prev mr-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary'><ChevronLeft size={20} /></Button>
+                    <Button aria-label='slide left' className='prev mr-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary'><ChevronLeft size={20} /></Button>
                     <Link href='https://news.commonshare.com/'>
                         <Button className='bg-white hover:bg-primary text-primary hover:text-white border border-primary'>All Updates</Button>
                     </Link>
-                    <Button className='next ml-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary'><ChevronRight size={20} /></Button>
+                    <Button aria-label='slide right' className='next ml-3 bg-white hover:bg-primary text-primary hover:text-white border border-primary'><ChevronRight size={20} /></Button>
                 </div>
             </div>
         </div>

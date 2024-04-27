@@ -197,17 +197,17 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 exactly-1024:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 pb-4">
                 <ul className="flex gap-4">
                     <li>
-                        <Link target='_blank' href='https://www.linkedin.com/company/commonshare' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                        <Link target='_blank' href='https://www.linkedin.com/company/commonshare' title="Follow us on linkedin" className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
                             <Linkedin className="text-primary" />
                         </Link>
                     </li>
                     <li>
-                        <Link target='_blank' href='https://www.instagram.com/commonshare_' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                        <Link target='_blank' href='https://www.instagram.com/commonshare_' title="Follow us on instagram" className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
                             <Instagram className="text-primary" />
                         </Link>
                     </li>
                     <li>
-                        <Link target='_blank' href='https://twitter.com/commonshare_' className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
+                        <Link target='_blank' href='https://twitter.com/commonshare_' title="Follow us on twitter" className="inline-block transition duration-150 transform -translate-y-0 hover:-translate-y-1">
                             <Twitter className="text-primary" />
                         </Link>
                     </li>
