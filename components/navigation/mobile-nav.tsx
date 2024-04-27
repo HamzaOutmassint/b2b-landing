@@ -17,7 +17,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo, toggleModal }) =
     return (
         <nav className='flex md:hidden justify-between w-full pr-4'>
             <Link href='/' className="self-center mr-8">
-                <Image src={commonShareLogo} alt="common share logo" height={30} />
+                <Image src={commonShareLogo} priority={true} alt="common share logo" height={30} />
             </Link>
             <Sheet open={open} onOpenChange={setOpen}>
                 <Button

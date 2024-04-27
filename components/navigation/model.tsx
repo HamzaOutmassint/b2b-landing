@@ -25,8 +25,8 @@ const Model: React.FC<modelProps> = ({ toggleModal, commonShareLogoWhite }) => {
                 </div>
                 <form className="flex flex-col gap-4 px-6 py-5">
                     <div className="">
-                        <Label htmlFor="email" className="text-gray-bold ">Email adreess</Label>
-                        <Input type="text" className="border border-gray-light mt-1" id="email" placeholder="Email Adress" />
+                        <Label htmlFor="email" className="text-gray-bold ">Email Address</Label>
+                        <Input type="text" className="border border-gray-light mt-1" id="email" placeholder="Email Address" />
                     </div>
                     <div className="flex flex-col">
                         <Label htmlFor="email" className="text-gray-bold ">Password</Label>
