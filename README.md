@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-This repository contains the source code for a B2B landing page built for CommonShare (commonshare.com). The landing page is developed using Next.js, Tailwind CSS, Shadcn UI, and TypeScript.
+This repository contains the source code for a B2B landing page built for CommonShare [CommonShare](https://commonshare.com). The landing page is developed using Next.js, Tailwind CSS, Shadcn UI, and TypeScript.
 
 [Live Demo](https://b2b-commonshare-landing.vercel.app)
 
@@ -25,18 +25,22 @@ This repository contains the source code for a B2B landing page built for Common
 
 ### Installation
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/HamzaOutmassint/b2b-landing.git
 
 2. Navigate to the project directory:
+
    ```bash
    cd b2b-landing
 
 3. Install dependencies:
+
    ```bash
    npm install
 
 4. Run the development server:
+
    ```bash
    npm run dev
 
