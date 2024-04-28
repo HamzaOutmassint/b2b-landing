@@ -1,5 +1,3 @@
-'use client';
-
 const UkSustainableBrands = () => {
     return (
         <div className="container mx-auto md:px-8 lg:px-24 py-12">

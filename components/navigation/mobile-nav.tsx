@@ -3,8 +3,8 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, } from 
 import Link from 'next/link'
 import Image, { StaticImageData } from 'next/image'
 import { Button } from '../ui/button'
-import React from 'react'
 import { Input } from '../ui/input'
+import { useState } from 'react';
 
 type ImageProp = string | StaticImageData
 interface MobileNavProps {
@@ -12,7 +12,7 @@ interface MobileNavProps {
     toggleModal: () => void
 }
 const MobileNav: React.FC<MobileNavProps> = ({ commonShareLogo, toggleModal }) => {
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = useState(false)
 
     return (
         <nav className='flex md:hidden justify-between w-full pr-4'>

@@ -4,7 +4,7 @@ import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
-import axios , {AxiosError} from 'axios';
+import axios from 'axios';
 
 interface NewsLetterFormProps { }
 

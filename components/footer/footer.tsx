@@ -1,5 +1,3 @@
-'use client';
-
 import Link from "next/link";
 import footerContent from "./footer-category";
 import { Instagram, Linkedin, Twitter } from "lucide-react";

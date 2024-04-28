@@ -21,7 +21,7 @@ const MainNav: React.FC<MainNavProps> = ({ commonShareLogo, toggleModal }) => {
         </Link>
         <form className="lg:text-sm md:text-xs col-span-3 flex self-start justify-center items-center border border-gray-light rounded-2xl">
           <Select name="companies">
-            <SelectTrigger>
+            <SelectTrigger aria-label="companies">
               <SelectValue placeholder="Companies" />
             </SelectTrigger>
             <SelectContent>

@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Brands from '../brands-data';
@@ -30,7 +28,7 @@ const BrandShowcase = () => {
                 <div className='my-6 pb-4 border-b border-gray-light'>
                   <h2 className='font-bold text-lg'>{ele.name}</h2>
                   <div className='flex font-light text-[12px] text-black'>
-                    <Image src={MissingDataIcon} alt='missing data icon' height={17} />
+                    <Image src={MissingDataIcon} alt='missing data icon' width={17} height={17} />
                     <span className='ml-2'> Missing data</span>
                   </div>
                 </div>

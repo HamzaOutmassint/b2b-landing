@@ -1,17 +1,42 @@
 "use client";
+
 import MainNav from "./main-nav";
 import MobileNav from "./mobile-nav";
 import commonShareLogo from '../../public/assest/logo/commonShare-logo.svg';
 import commonShareLogoWhite from '../../public/assest/logo/commonShare-logo-white.png';
 import { useEffect, useState } from "react";
-import Model from "./model";
+import dynamic from "next/dynamic";
+
+const DynamicModelComponent = dynamic(()=> import('./model') , {
+  ssr : false, 
+  loading : () => <p>i am fetching </p>
+})
+
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isMobileView, setIsMobileView] = useState<boolean>(false);
 
   const toggleModal = () => {
-    setIsModalOpen(!isModalOpen); 
+    setIsModalOpen(!isModalOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsMobileView(true);
+      } else {
+        setIsMobileView(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (isModalOpen) {
@@ -27,16 +52,19 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center py-4 pl-4 mr-[15px] border-b border-gray-light sticky top-0 z-50 bg-white w-full">
-      <MainNav 
-        commonShareLogo={commonShareLogo} 
-        toggleModal={toggleModal}
-      />
-      <MobileNav 
-        commonShareLogo={commonShareLogo} 
-        toggleModal={toggleModal}
-      />
+      {isMobileView ? (
+        <MobileNav
+          commonShareLogo={commonShareLogo}
+          toggleModal={toggleModal}
+        />
+      ) : (
+        <MainNav
+          commonShareLogo={commonShareLogo}
+          toggleModal={toggleModal}
+        />
+      )}
       {
-        isModalOpen && <Model  toggleModal={toggleModal} commonShareLogoWhite={commonShareLogoWhite}/>
+        isModalOpen && <DynamicModelComponent toggleModal={toggleModal} commonShareLogoWhite={commonShareLogoWhite} />
       }
     </header>
   )
